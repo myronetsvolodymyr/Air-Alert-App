@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Прогноз повітряних тривог у районах України"
 requires-python = ">=3.12"
 dependencies = [
+    "certifi",
     "duckdb",
     "geopandas",
     "matplotlib",

@@ -32,6 +32,14 @@ OFFICIAL_ALERTS_URL = (
     "https://raw.githubusercontent.com/Vadimkin/ukrainian-air-raid-sirens-dataset/"
     "main/datasets/official_data_uk.csv"
 )
+OFFICIAL_ALERTS_RAW = RAW / "official_data_uk.csv"
+
+# Межі адмінодиниць OCHA COD-AB Ukraine (HDX, ліцензія CC BY-IGO)
+COD_AB_URL = (
+    "https://data.humdata.org/dataset/d23f529f-31e4-4021-a65b-13987e5cfb42/resource/"
+    "51ca7001-908b-4f57-be58-e85e10c6d3c4/download/ukr_admin_boundaries.gdb.zip"
+)
+COD_AB_RAW = RAW / "cod_ab" / "ukr_admin_boundaries.gdb.zip"
 
 # Часова модель MVP: горизонти (D-1) і межі вибірок (D-5, D-7).
 # Кінцеві межі невключні; між вибірками ще лишаємо проміжок h годин (AC-5.6).
