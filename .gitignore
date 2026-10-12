@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Секрети: ключі й сесії Telegram (AC-3.2, AC-9.3)
+.env
+*.session
+*.session-journal
+
+# Дані, що відтворюються скриптами (INFORMATION_ARCHITECTURE.md, розділ 8)
+data/raw/
+data/interim/
+data/processed/
+outputs/forecasts/
+
+# Obsidian
+.obsidian/
+
+# macOS
+.DS_Store
