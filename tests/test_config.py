@@ -15,6 +15,7 @@ def test_splits_leave_room_for_gap():
     assert config.TEST_START - config.VAL_START > gap
 
 
-def test_test_period_ends_before_outages():
+def test_test_period_does_not_overlap_outages():
     # AC-1.3: тестовий період MVP не зачіпає днів збою джерела
-    assert all(config.TEST_END <= start for start, _, _ in config.OUTAGES)
+    for start, end, _ in config.OUTAGES:
+        assert end <= config.TEST_START or start >= config.TEST_END
